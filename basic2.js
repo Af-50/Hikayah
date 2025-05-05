@@ -21,10 +21,11 @@ window.onload = () => {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
             });
+            alert(model.getAttribute('scale'));
             box.setAttribute("scale", {
-                x: 20, 
-                y: 20,
-                z: 20
+                x: 200, 
+                y: 200,
+                z: 200
             });
             box.setAttribute('material', { color: 'red' } );
             box.setAttribute('gps-new-entity-place', {
