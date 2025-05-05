@@ -21,7 +21,7 @@ window.onload = () => {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
             });
-            alert(`scale:`, model.getAttribute('scale'));
+            alert(`scale:`);
             /*box.setAttribute("scale", {
                 x: 200, 
                 y: 200,
