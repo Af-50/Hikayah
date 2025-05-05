@@ -19,7 +19,7 @@ window.onload = () => {
             //model.object3D.rotation.set(90);
             model.setAttribute("position", {
                 x: 0,
-                y: 20,
+                y: 0,
                 z: 0
             });
 
