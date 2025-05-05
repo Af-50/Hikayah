@@ -21,8 +21,8 @@ window.onload = () => {
             model.object3D.scale.set(20,20,20);
             //entity.setAttribute('material', { color: 'red' } );
             model.setAttribute("position",{
-                x: 0,
-                y: 0.001,
+                x: 0.001,
+                y: 0.002,
                 z:0
             })
             //model.object3D.rotation.set(90);
