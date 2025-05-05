@@ -29,16 +29,12 @@ window.onload = () => {
                 z: 0
             });
 */
-            const text = document.createElement("a-text");
+            const text = document.createElement("a-entity");
             const textScale = 100;
             text.setAttribute("look-at", "[gps-new-camera]");
-            text.setAttribute("scale", {
-                x: textScale,
-                y: textScale,
-                z: textScale
-            });
-            text.setAttribute("value", "this is home");
-            text.setAttribute("align", "center");
+            
+            text.setAttribute("text", "value: this is home");
+            //text.setAttribute("align", "center");
 
             text.setAttribute('gps-new-entity-place',{
                 latitude: e.detail.position.latitude + 0.001,
