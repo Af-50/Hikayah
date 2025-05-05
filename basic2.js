@@ -18,7 +18,7 @@ window.onload = () => {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
             });
-            //model.object3D.rotation.set(90);
+            model.object3D.rotation.set(90);
             box.setAttribute("scale", {
                 x: 20, 
                 y: 20,
