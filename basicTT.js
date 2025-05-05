@@ -22,10 +22,10 @@ window.onload = () => {
             //entity.setAttribute('material', { color: 'red' } );
             model.setAttribute("position",{
                 x: 0.001,
-                y: 0.002,
+                y: 0.1,
                 z:0
             })
-            //model.object3D.rotation.set(90);
+            model.object3D.rotation.set(90);
             
             box.setAttribute("look-at","[gps-new-camer");
             box.setAttribute("scale", {
