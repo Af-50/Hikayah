@@ -31,7 +31,7 @@ window.onload = () => {
             box.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude ,
-                altitude: e.detail.position.altitude + 0.0005,
+                altitude: e.detail.position.altitude + 0.001,
             });
 
             document.querySelector("a-scene").appendChild(model);
