@@ -25,7 +25,12 @@ window.onload = () => {
                 y: 0.1,
                 z:0
             })
-            model.object3D.rotation.set(90);
+            
+            model.object3D.rotation.set(
+                THREE.MathUtils.degToRad(90),
+                THREE.MathUtils.degToRad(0),
+                THREE.MathUtils.degToRad(0)
+            );
             
             box.setAttribute("look-at","[gps-new-camer");
             box.setAttribute("scale", {
