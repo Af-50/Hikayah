@@ -50,7 +50,7 @@ window.onload = () => {
 
             //document.querySelector("a-scene").appendChild(comp);
             document.querySelector("a-scene").appendChild(model);//this
-            document.querySelector("a-scene").appendChild(text);//this
+            //document.querySelector("a-scene").appendChild(text);//this
         }
         testEntityAdded = true;
     });
