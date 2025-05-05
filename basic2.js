@@ -9,13 +9,13 @@ window.onload = () => {
             // Add a box to the north of the initial GPS position
             const model = document.createElement("a-entity"); //modell
             const box = document.createElement("a-box");  // box
-
-            model.setAttribute("scale", { //modell
-                x: 0.15, 
-                y: 0.15,
-                z: 0.15
-            });
+            
             model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
+            model.setAttribute("scale", { //modell
+                x: 20, 
+                y: 20,
+                z: 20
+            });
             //entity.setAttribute('material', { color: 'red' } );
             model.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
