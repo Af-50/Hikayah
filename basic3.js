@@ -12,7 +12,7 @@ window.onload = () => {
             comp.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
-            });*/
+            });
             
             const model = document.createElement("a-entity");
             model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
@@ -20,7 +20,7 @@ window.onload = () => {
             model.setAttribute('gps-new-entity-place',{ //this
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
-            });           
+            });           */
             //model.object3D.rotation.set(90);
            /*
             model.setAttribute("position", {
@@ -49,8 +49,8 @@ window.onload = () => {
             //comp.appendChild(text);
 
             //document.querySelector("a-scene").appendChild(comp);
-            document.querySelector("a-scene").appendChild(model);//this
-            //document.querySelector("a-scene").appendChild(text);//this
+            //document.querySelector("a-scene").appendChild(model);//this
+            document.querySelector("a-scene").appendChild(text);//this
         }
         testEntityAdded = true;
     });
