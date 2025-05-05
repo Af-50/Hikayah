@@ -75,19 +75,8 @@ window.onload = () => {
                 longitude: e.detail.position.longitude
             });
             //model.object3D.rotation.set(90);
-            box.setAttribute("scale", {
-                x: 20, 
-                y: 20,
-                z: 20
-            });
-            box.setAttribute('material', { color: 'red' } );
-            box.setAttribute('gps-new-entity-place', {
-                
-                latitude: e.detail.position.latitude + 0.001,
-                longitude: e.detail.position.longitude +0.001
-            });
+            
             document.querySelector("a-scene").appendChild(model);
-            document.querySelector("a-scene").appendChild(box);
         }
         testEntityAdded = true;
     });

@@ -26,8 +26,8 @@ window.onload = () => {
                 y: 50,
                 z: 50
             });
-            box.setAttribute('value', "this is home" );
-            box.setAttribute("align", "center");
+            box.setAttribute("value", "this is home" );
+
             document.querySelector("a-scene").appendChild(model);
             document.querySelector("a-scene").appendChild(box);
         }
