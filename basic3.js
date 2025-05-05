@@ -1,4 +1,4 @@
-window.onload = () => {
+/*window.onload = () => {
     let testEntityAdded = false;
 
     const el = document.querySelector("[gps-new-camera]");
@@ -23,7 +23,7 @@ window.onload = () => {
                 longitude: e.detail.position.longitude
             });           
             //model.object3D.rotation.set(90);
-           /**/
+           /*
             model.setAttribute("position", {
                 x: 0,
                 y: 0,
@@ -52,8 +52,8 @@ window.onload = () => {
         testEntityAdded = true; 
     });
 };
+*/
 
-/*
 window.onload = () => {
     let testEntityAdded = false;
 
@@ -92,4 +92,3 @@ window.onload = () => {
         testEntityAdded = true;
     });
 };
-*/
