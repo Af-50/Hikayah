@@ -45,12 +45,11 @@ window.onload = () => {
             document.querySelector("a-scene").appendChild(comp);
             //document.querySelector("a-scene").appendChild(model);//this
             //document.querySelector("a-scene").appendChild(text);//this
+            model.addEventListener("model-error",function mm(){
+                alert("did not loead");}
+            );
         }
         testEntityAdded = true; 
-        model.addEventListener("model-error",function mm(){
-            alert("did not loead");
-        } );
-
     });
 };
 
