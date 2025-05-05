@@ -11,9 +11,9 @@ window.onload = () => {
             const box = document.createElement("a-box");  // box
 
             model.setAttribute("scale", { //modell
-                x: 100, 
-                y: 100,
-                z: 100
+                x: 0.15, 
+                y: 0.15,
+                z: 0.15
             });
             model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
             //entity.setAttribute('material', { color: 'red' } );
