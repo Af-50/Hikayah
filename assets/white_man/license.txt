@@ -1,0 +1,8 @@
+Model Information:
+* title:	White man
+* source:	https://sketchfab.com/3d-models/white-man-f9973c009bf642bb82bbb977a6fe367d
+* author:	StuffUK64 (https://sketchfab.com/StuffUK64)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
