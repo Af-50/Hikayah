@@ -10,12 +10,13 @@ window.onload = () => {
             const model = document.createElement("a-entity"); //modell
             const box = document.createElement("a-box");  // box
             
-            model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
             model.setAttribute("scale", { //modell
                 x: 200, 
                 y: 200,
                 z: 200
             });
+            model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
+            
             //entity.setAttribute('material', { color: 'red' } );
             model.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
