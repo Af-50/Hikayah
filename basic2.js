@@ -12,21 +12,20 @@ window.onload = () => {
             
             model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
             model.setAttribute("scale", { //modell
-                x: 20, 
-                y: 20,
-                z: 20
+                x: 200, 
+                y: 200,
+                z: 200
             });
             //entity.setAttribute('material', { color: 'red' } );
             model.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
             });
-            alert(`scale:`);
-            /*box.setAttribute("scale", {
-                x: 200, 
-                y: 200,
-                z: 200
-            });*/
+            box.setAttribute("scale", {
+                x: 20, 
+                y: 20,
+                z: 20
+            });
             box.setAttribute('material', { color: 'red' } );
             box.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
