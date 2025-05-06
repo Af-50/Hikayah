@@ -8,8 +8,7 @@ window.onload = () => {
             alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
             // Add a box to the north of the initial GPS position
             const model = document.createElement("a-entity"); //modell
-            const box = document.createElement("a-box");  // box
-            
+            const box = document.createElement("a-text");  // box
             
             model.setAttribute('gltf-model', './assets/white_man/scene.gltf')
             model.object3D.scale.set(20,20,20);
@@ -24,11 +23,11 @@ window.onload = () => {
                 y: 20,
                 z: 20
             });
-            box.setAttribute('material', { color: 'red' } );
+            box.setAttribute("value", "this is home" );
             box.setAttribute('gps-new-entity-place', {
                 
-                latitude: e.detail.position.latitude + 0.001,
-                longitude: e.detail.position.longitude +0.001
+                latitude: e.detail.position.latitude + 0.00001,
+                longitude: e.detail.position.longitude 
             });
             document.querySelector("a-scene").appendChild(model);
             document.querySelector("a-scene").appendChild(box);
