@@ -10,7 +10,7 @@ window.onload = () => {
             
             const comp = document.createElement("a-entity");
             const model = document.createElement("a-entity"); //modell
-            const box = document.createElement("a-text");  // box
+            const text = document.createElement("a-text");  // box
             
             comp.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
@@ -24,25 +24,25 @@ window.onload = () => {
                 x: 0.001,
                 y: 0.1,
                 z:0
-            })
+            });
             
             
-            box.setAttribute("look-at","[gps-new-camer");
-            box.setAttribute("scale", {
+            text.setAttribute("look-at","[gps-new-camer");
+            text.setAttribute("scale", {
                 x: 50, 
                 y: 50,
                 z: 50
             });
-            box.setAttribute('value', 'this is home' );
+            text.setAttribute('value', 'this is home' );
 
-            box.setAttribute("position", {
+            text.setAttribute("position", {
                 x:0,
                 y:0,
                 z:0
             });
 
             comp.querySelector("a-scene").appendChild(model);
-            comp.querySelector("a-scene").appendChild(box);
+            comp.querySelector("a-scene").appendChild(text);
             document.querySelector("a-scene").appendChild(comp);
         }
         testEntityAdded = true;
