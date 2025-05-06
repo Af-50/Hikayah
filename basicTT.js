@@ -17,7 +17,7 @@ window.onload = () => {
                 longitude: e.detail.position.longitude
             });
             
-            model.setAttribute('gltf-model', './assets/mant.gltf');
+            model.setAttribute('gltf-model', './mant.gltf');
             model.object3D.scale.set(20,20,20);
             //entity.setAttribute('material', { color: 'red' } );
             
