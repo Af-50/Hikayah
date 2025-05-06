@@ -14,12 +14,8 @@ window.onload = () => {
                 z: 20
             });
 
-            model.object3D.rotation.set(
-                THREE.MathUtils.degToRad(90),
-                THREE.MathUtils.degToRad(0),
-                THREE.MathUtils.degToRad(0)
-            );
-            
+            modelel.setAttribute('rotation', {x: 45, y: 0, z: 0});
+
             entity.setAttribute('material', { color: 'red' } );
             entity.setAttribute('gps-new-entity-place', {
                 latitude: e.detail.position.latitude + 0.001,
