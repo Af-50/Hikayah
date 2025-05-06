@@ -27,7 +27,7 @@ window.onload = () => {
                 y: 20,
                 z: 20
             });
-            box.setAttribute("value", "this is home" );
+            box.setAttribute("value", "this is Al-Qara Hill" );
             box.setAttribute('gps-new-entity-place', {
                 
                 latitude: e.detail.position.latitude + 0.00001,
