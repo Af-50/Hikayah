@@ -17,7 +17,7 @@ window.onload = () => {
                 longitude: e.detail.position.longitude
             });
             
-            model.setAttribute('gltf-model', './assets/white_man/scene.gltf');
+            model.setAttribute('gltf-model', './assets/mant.gltf');
             model.object3D.scale.set(20,20,20);
             //entity.setAttribute('material', { color: 'red' } );
             
@@ -30,8 +30,8 @@ window.onload = () => {
             box.setAttribute("value", "this is home" );
             box.setAttribute('gps-new-entity-place', {
                 
-                latitude: e.detail.position.latitude + 0.001,
-                longitude: e.detail.position.longitude +0.00005
+                latitude: e.detail.position.latitude + 0.00001,
+                longitude: e.detail.position.longitude 
             });
             document.querySelector("a-scene").appendChild(model);
             document.querySelector("a-scene").appendChild(box);
