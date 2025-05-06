@@ -27,7 +27,7 @@ window.onload = () => {
             box.setAttribute('gps-new-entity-place', {
                 
                 latitude: e.detail.position.latitude + 0.001,
-                longitude: e.detail.position.longitude + 0.0001
+                longitude: e.detail.position.longitude + 0.001
             });
             document.querySelector("a-scene").appendChild(model);
             document.querySelector("a-scene").appendChild(box);
